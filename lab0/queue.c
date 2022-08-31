@@ -113,7 +113,15 @@ bool q_insert_tail(queue_t *q, int v)
 bool q_remove_head(queue_t *q, int *vp)
 {
     /* You need to fix up this code. */
+    if(q == NULL || q->head == NULL) {
+      return false;
+    }
+    list_ele_t *oldh = q->head;
     q->head = q->head->next;
+    int oldh_val = oldh->value;
+    free(oldh);
+    if(vp != NULL)
+      *vp = oldh_val;
     return true;
 }
 
