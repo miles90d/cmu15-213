@@ -30,6 +30,7 @@ queue_t *q_new()
     }
     q->head = NULL;
     q->tail = NULL;
+    q->size = 0;
     return q;
 }
 
@@ -74,6 +75,7 @@ bool q_insert_head(queue_t *q, int v)
     } else {
       q->head = newh;
     }
+    q->size++;
     return true;
 }
 
@@ -100,6 +102,7 @@ bool q_insert_tail(queue_t *q, int v)
       q->tail->next = newt;
       q->tail = newt;
     }
+    q->size++;
     return true;
 }
 
@@ -122,6 +125,7 @@ bool q_remove_head(queue_t *q, int *vp)
     free(oldh);
     if(vp != NULL)
       *vp = oldh_val;
+    q->size--;
     return true;
 }
 
@@ -131,9 +135,10 @@ bool q_remove_head(queue_t *q, int *vp)
  */
 int q_size(queue_t *q)
 {
-    /* You need to write the code for this function */
-    /* Remember: It should operate in O(1) time */
+  if(q == NULL || q->head == NULL) {
     return 0;
+  }
+  return q->size;
 }
 
 /*
@@ -145,6 +150,18 @@ int q_size(queue_t *q)
  */
 void q_reverse(queue_t *q)
 {
-    /* You need to write the code for this function */
+  if(q == NULL || q->head == NULL)
+    return;
+  list_ele_t *oldh = q->head;
+  list_ele_t *cur = q->head;
+  list_ele_t *prev = NULL;
+  while (cur != NULL)
+  {
+    list_ele_t *next = cur->next;
+    cur->next = prev;
+    prev = cur;
+    cur = next;
+  }
+  q->head = q->tail;
+  q->tail = oldh;
 }
-
