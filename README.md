@@ -3,7 +3,7 @@
 Using course http://www.cs.cmu.edu/afs/cs/academic/class/15213-f17/www/schedule.html for self study.
 
 ## Lab Progress
-- [ ] Lab0: c programming lab
+- [x] Lab0: c programming lab
 - [ ] Lab1: data lab
 - [ ] Lab2: bomb lab
 - [ ] Lab3: attack lab
