@@ -19,9 +19,9 @@ Using course http://www.cs.cmu.edu/afs/cs/academic/class/15213-f17/www/schedule.
 [ ] Final Exam
 
 ## Course Progress
-- [ ] Overview
-  - [ ] reading 1
-  - [ ] video
+- [x] Overview
+  - [x] reading 1
+  - [x] video
 - [ ] Bits, Bytes, & Integers I
   - [ ] reading 2.1
   - [ ] video
