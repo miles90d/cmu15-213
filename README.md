@@ -14,9 +14,9 @@ Using course http://www.cs.cmu.edu/afs/cs/academic/class/15213-f17/www/schedule.
 - [ ] Lab Hidden: proc lab
 
 ## Exam Progress
-[ ] Exam 1
-[ ] Exam 2
-[ ] Final Exam
+- [ ] Exam 1
+- [ ] Exam 2
+- [ ] Final Exam
 
 ## Course Progress
 - [x] Overview
