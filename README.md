@@ -25,9 +25,9 @@ Using course http://www.cs.cmu.edu/afs/cs/academic/class/15213-f17/www/schedule.
 - [x] Bits, Bytes, & Integers I
   - [x] reading 2.1
   - [x] video
-- [ ] Bits, Bytes, & Integers II
-  - [ ] reading 2.2-2.3
-  - [ ] video
+- [x] Bits, Bytes, & Integers II
+  - [x] reading 2.2-2.3
+  - [x] video
 - [ ] Floating Point
   - [ ] reading 2.4
   - [ ] video
